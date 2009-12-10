@@ -4,7 +4,7 @@ use warnings;
 
 {
     no strict "vars";
-    $VERSION = "0.01";
+    $VERSION = "0.02";
 }
 
 use Acme::CPANAuthors::Register (
@@ -251,9 +251,11 @@ use Acme::CPANAuthors::Register (
     'NI-S'      => 'Nick Ing-Simmons (RIP)',
 );
 
-
 q<
-    The World Has Gone Mad!
+    United, united, united we stand
+    United we never shall fall
+    United, united, united we stand
+    United we stand one and all
 >
 
 
