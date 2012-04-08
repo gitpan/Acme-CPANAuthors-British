@@ -4,7 +4,7 @@ use warnings;
 
 {
     no strict "vars";
-    $VERSION = "0.04";
+    $VERSION = "0.05";
 }
 
 use Acme::CPANAuthors::Register (
@@ -281,8 +281,8 @@ Acme::CPANAuthors::British - We are British CPAN authors
    my @ids      = $authors->id;
    my @distros  = $authors->distributions("BARBIE");
    my $url      = $authors->avatar_url("BINGOS");
-   my $kwalitee = $authors->kwalitee("DAVORG");
-   my $name     = $authors->name("DCANTRELL");
+   my $kwalitee = $authors->kwalitee("JONALLEN");
+   my $name     = $authors->name("DGL");
 
 =head1 DESCRIPTION
 
@@ -325,11 +325,6 @@ L<Acme::CPANAuthors::European> - European CPAN authors
 
 L<Acme::CPANAuthors::EU> - EU CPAN authors
 
-=head1 AUTHOR
-
-Barbie C<< <barbie at cpan.org> >>
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
@@ -366,11 +361,16 @@ this release.
 
 I always wanted to release an Acme module :)
 
+=head1 AUTHOR
+
+  Barbie, <barbie@cpan.org>
+  for Miss Barbell Productions <http://www.missbarbell.co.uk>.
+
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009-2010 Barbie for Miss Barbell Productions.
+  Copyright 2009-2012 Barbie for Miss Barbell Productions.
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+  This module is free software; you can redistribute it and/or
+  modify it under the Artistic License 2.0.
 
 =cut
