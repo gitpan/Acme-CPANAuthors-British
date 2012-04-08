@@ -4,10 +4,11 @@ use warnings;
 
 {
     no strict "vars";
-    $VERSION = "0.05";
+    $VERSION = "0.06";
 }
 
 use Acme::CPANAuthors::Register (
+    BBC         => 'BBC (British Broadcasting Corporation)',
     BBCIFL      => 'BBC, Interactive Factual & Learning',
     BBCPKENT    => 'P Kent (BBC)',
     BBCSIMONF   => 'Simon Flack (BBC)',

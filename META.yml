@@ -19,5 +19,6 @@ no_index:
     - inc
 requires:
   Acme::CPANAuthors: 0.04
+  IO::File: 0
   Test::More: 0.70
-version: 0.05
+version: 0.06
