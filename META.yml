@@ -21,4 +21,4 @@ requires:
   Acme::CPANAuthors: 0.04
   IO::File: 0
   Test::More: 0.70
-version: 0.06
+version: 0.07
