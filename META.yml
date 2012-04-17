@@ -1,24 +1,45 @@
----
-abstract: 'We are British CPAN authors'
+--- #YAML:1.0
+name:                     Acme-CPANAuthors-British
+version:                  0.08
+abstract:                 We are British CPAN authors.
 author:
-  - 'Barbie <barbie@cpan.org>'
+  - Barbie <barbie@cpan.org>
+
+license:                  artistic_2
+distribution_type:        module
+installdirs:              site
+
+requires:
+  perl:                   5.006
+  Acme::CPANAuthors:      0.04
+recommends:
+  Test::More:             0.70
+  Test::Pod:              1.00
+  Test::Pod::Coverage:    0.08
+  Test::CPAN::Meta:       0
+  Test::CPAN::Meta::JSON: 0
 build_requires:
-  ExtUtils::MakeMaker: 0
-configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621'
-license: perl
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
-name: Acme-CPANAuthors-British
+  Test::More:             0.70
+  IO::File:               0
+
+provides:
+  Acme::CPANAuthors::British:
+    file:     lib/Acme/CPANAuthors/British.pm
+    version:  0.08
+  Acme::CPANAuthors::British::Companies:
+    file:     lib/Acme/CPANAuthors/British/Companies.pm
+    version:  0.08
 no_index:
   directory:
     - t
-    - inc
-requires:
-  Acme::CPANAuthors: 0.04
-  IO::File: 0
-  Test::More: 0.70
-version: 0.07
+    - examples
+
+resources:
+  license:    http://dev.perl.org/licenses/
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Acme-CPANAuthors-British
+  repository: http://github.com/barbie/acme-cpanauthors-british
+
+meta-spec:
+   version:   1.4
+   url:       http://module-build.sourceforge.net/META-spec-v1.4.html
+generated_by: Hand 1.0

@@ -1,43 +1,67 @@
 {
-   "abstract" : "We are British CPAN authors",
-   "author" : [
-      "Barbie <barbie@cpan.org>"
-   ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621",
-   "license" : [
-      "perl_5"
-   ],
-   "meta-spec" : {
-      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
-   },
-   "name" : "Acme-CPANAuthors-British",
-   "no_index" : {
-      "directory" : [
-         "t",
-         "inc"
-      ]
-   },
-   "prereqs" : {
-      "build" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : 0
-         }
-      },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : 0
-         }
-      },
-      "runtime" : {
-         "requires" : {
-            "Acme::CPANAuthors" : "0.04",
-            "IO::File" : 0,
-            "Test::More" : "0.70"
-         }
-      }
-   },
-   "release_status" : "stable",
-   "version" : "0.07"
+    "name": "Acme-CPANAuthors-British",
+    "version": "0.08",
+    "abstract": "We are British CPAN authors.",
+    "author": [
+        "Barbie (BARBIE) <barbie@cpan.org>"
+    ],
+
+    "license": "artistic_2",
+    "dynamic_config" : 0,
+    "release_status" : "stable",
+    "meta-spec": {
+        "version": "2",
+        "url": "http://search.cpan.org/dist/CPAN-Meta/lib/CPAN/Meta/Spec.pm"
+    },
+    "generated_by": "Hand 1.0",
+    "keywords" : [
+        "acme",
+        "cpan",
+        "authors"
+    ],
+
+    "prereqs" : {
+        "runtime" : {
+            "requires" : {
+                "perl": "5.006",
+                "Acme::CPANAuthors": "0.04"
+            }
+        },
+        "test" : {
+            "requires": {
+                "Test::More": "0.70",
+                "IO::File": "0"
+            },
+            "recommends": {
+                "Test::CPAN::Meta": "0",
+                "Test::CPAN::Meta::JSON": "0",
+                "Test::Pod": "1.00",
+                "Test::Pod::Coverage": "0.08"
+            }
+        }
+    },
+
+    "provides": {
+        "Acme::CPANAuthors::British": {
+            "file": "lib/Acme/CPANAuthors/British.pm",
+            "version": "0.08"
+        },
+        "Acme::CPANAuthors::British::Companies": {
+            "file": "lib/Acme/CPANAuthors/British/Companies.pm",
+            "version": "0.08"
+        }
+    },
+    "no_index": {
+        "directory": ["t","examples"]
+    },
+
+    "resources": {
+        "license": "http://dev.perl.org/licenses/",
+        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=Acme-CPANAuthors-British" },
+        "repository": {
+            "url": "git://github.com/barbie/acme-cpanauthors-british.git",
+            "web": "http://github.com/barbie/acme-cpanauthors-british",
+            "type": "git"
+        }
+    }
 }
