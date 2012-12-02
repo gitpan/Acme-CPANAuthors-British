@@ -1,7 +1,10 @@
 Revision history for Acme-CPANAuthors-British
 
+0.18    2012-12-02
+        - fixed skip test counts
+
 0.17    2012-11-25
-        - gravatar test just not working at the moment :(
+        - gravatar tests just not working at the moment :(
 
 0.16    2012-11-18
         - more robust tests.
