@@ -4,7 +4,7 @@ use warnings;
 
 {
     no strict "vars";
-    $VERSION = "1.00";
+    $VERSION = "1.01";
 }
 
 use Acme::CPANAuthors::Register (
@@ -174,6 +174,7 @@ use Acme::CPANAuthors::Register (
     MIRK        => 'Mike Taylor',
     MJBRIGHT    => 'Martin Bright',
     MJEMMESON   => 'Michael Jemmeson',
+    MJEVANS     => 'Martin J. Evans',
     MJEWELL     => 'Mike Jewell',
     MJG         => 'Michael Gray',
     MJM         => 'Matt Mitchell',
